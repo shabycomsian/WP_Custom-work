@@ -54,25 +54,6 @@
     <h1>Kanye Quotes  API</h1>
 <?php echo do_shortcode("[kanye_quotes]"); ?>
 
-
-
-
-    </div>
-    <script>
-    jQuery(document).ready(function($) {
-    $.ajax({
-        url: ajaxurl,
-        type: 'POST',
-        data: {
-            action: 'fetch_projects',
-            security: ajax_object.ajax_nonce
-        },
-        success: function(response) {
-            if(response.success) {
-                console.log(response.data);
-            }
-        }
-    });
-});
-</script>
+</div>
+    
 <?php get_footer(); ?>
